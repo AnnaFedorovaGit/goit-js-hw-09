@@ -12,7 +12,7 @@ elements.createButton.addEventListener("click", (event) => {
   event.preventDefault();
   let timeOut = 0;
 
-  for (i = 1; i <= elements.amount.value; i += 1) { 
+  for (let i = 1; i <= elements.amount.value; i += 1) { 
     const delay = i === 1 ? elements.delay.value : elements.step.value;
     timeOut += Number(delay);
     
